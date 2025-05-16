@@ -7,6 +7,8 @@
         *   A new product "webcam" arrives with a stock of 25 units. Add it to the inventory.
         *   A customer buys 3 "usb_c_hub". Update its quantity. What happens if they try to buy more than available? (Don't implement the check yet, just note the potential issue).
 
+        
+
     
     2.  **Price Check:**
         *   Create a *separate* dictionary called `product_prices` storing prices for at least "laptop_stand" ($25), "usb_c_hub" ($30), and "ergonomic_keyboard" ($75).
