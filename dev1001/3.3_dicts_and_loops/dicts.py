@@ -87,3 +87,13 @@ if inventory['laptop_stand'] <= 14:
 else :
     print(f'Supplies are adequate')
     
+#Joss' answer
+# item_to_check_safe = "laptop_stand"
+
+# inventory["laptop_stand"] -= 16
+
+# quantity_safe = inventory.get(item_to_check_safe, 0) # Default to 0 if not found
+# if quantity_safe < 15:
+#     print(f"Alert: Low stock for {item_to_check_safe}! Quantity remaining: {quantity_safe}")
+# else:
+#     print(f"Quantity of {item_to_check_safe}: {quantity_safe}")
