@@ -40,3 +40,55 @@ print("Today's Tasks:")
 for index, task in enumerate(tasks_today):
     print(f"{index + 1}. {task}") # User-friendly 1-based indexing
 print("-" * 30 + "\n")
+
+
+#   **Tasks:**
+#     1.  **`while` Loop Temperature Check:**
+#         *   Imagine a sensor reading. Start with `current_temp = 18`.
+#         *   Write a `while` loop that keeps printing "ç" and increments `current_temp` by 1, as long as `current_temp` is less than 22.
+#         *   Once it reaches 22 or more, print "Temperature ({current_temp}°C) is optimal."
+
+current_temp = 18
+
+while current_temp <= 22:
+    print(f"Temperature (degrees): {current_temp}")
+    current_temp += 1 
+print(f"Temperature is optimal.")
+
+
+#     2.  **`for...in range()` Odd Numbers:**
+#         *   Print all odd numbers between 1 and 10 (inclusive) using a `for` loop with `range()`. (Hint: `range()` can take a step argument).
+        
+#         print([x for x in range(11) if x % 2 == 1])
+
+for x in range(1,10):
+    print([x for x in range(11) if x % 2 == 1])
+
+#     3.  **`for...in iterable` (dictionary) with Conditional Logic:**
+#         *   Using the `inventory` dictionary from earlier:
+#             ```python
+#             inventory = {"laptop_stand": 12, "usb_c_hub": 32, "webcam": 8, "ergonomic_keyboard": 18}
+#             ```
+#         *   Iterate through the inventory. For each item, if its quantity is less than 10, print an "Order more [item_name]!" message. Otherwise, print "[item_name] stock is OK."
+#     
+inventory = {"laptop_stand": 12, "usb_c_hub": 32, "webcam": 8, "ergonomic_keyboard": 18}
+
+for product, item_quantity in inventory.items():
+    print(f"- {product.replace('_', ' ').title()}: {item_quantity}")
+    if item_quantity <= 10:
+        print(f"Order more {product}!") 
+    else:
+        print(f'{product.replace('_', ' ').title()} stock is OK!' )
+# 
+# 
+# 4.  **`enumerate()` with a Twist:**
+#         *   Given `guest_list = ["Alice", "Bob", "Charlie", "Diana"]`.
+#         *   Use `enumerate` to print an invitation list like:
+#             *   "Invitation 1 for Alice"
+#             *   "Invitation 2 for Bob"
+#             *   ...etc.
+guest_list = ["Alice", "Bob", "Charlie", "Diana"]
+print("Guest_Lists")
+for invitation, name in enumerate(guest_list):
+    print(f"Invitation # {invitation + 1} for {name}") 
+    
