@@ -56,4 +56,3 @@ print(f"Difference (A - B): {set_a - set_b} or {set_a.difference(set_b)}")
 print(f"Difference (B - A): {set_b - set_a}")
 print(f"Symmetric Difference (A ^ B): {set_a ^ set_b}") # Items in A or B, but not both
 
-"""

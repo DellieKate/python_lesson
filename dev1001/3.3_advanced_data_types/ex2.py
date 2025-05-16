@@ -8,7 +8,7 @@ cart.append("milk") # Adds to the end
 
 
 # 2. Bananas are out of stock. Remove them.
-cart.remove("bananas") # Removes the first occurrence of 'apples'
+cart.remove("bananas") # Removes the first occurrence of 'bananas'
 
 # 3. You remembered you need eggs and they're a higher priority
 #       than everything other than apples.
@@ -21,11 +21,14 @@ cart.extend(['apples', 'apples'])
 # 5. Print out how many apples are in the cart.
 print(f'number of apples: {cart.count('apples')}')
 # 6. Sort the cart alphabetically.
- cart.sort()
+cart.sort()
+
 # 7. Get and print a new list with only the first 2 items.
 print(cart[:2])
+
 # 8. Get and print a new list with all items EXCEPT the first one.
 print(cart[1:])
+
 # 9. Print the final cart and how many items are in it.
 print(cart)
 print(f'Total items: {len(cart)}')
