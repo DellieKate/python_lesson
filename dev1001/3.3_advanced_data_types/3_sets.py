@@ -12,7 +12,6 @@
 numbers = {1, 2, 3, 2, 4, 1} # Duplicates are automatically removed
 print(f"Numbers set: {numbers}")
 
-"""
 letters = set("hello world") # Creates a set from a string (unique letters)
 print(f"Unique letters: {letters}")
 

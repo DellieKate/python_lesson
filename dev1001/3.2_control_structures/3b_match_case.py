@@ -2,6 +2,13 @@
 http_status_code = 404 # Try 200, 500, 999
 status_meaning = ""
 
+#if http_status_code ==200:
+#   status_meaning = ok
+#elif http_status_code == 403:
+#    status_meaning = 'Forbidden'
+#etc
+# match only uses ==, not on >,< etc
+
 match http_status_code:
     case 200:
         status_meaning = "OK - Request successful."

@@ -1,6 +1,6 @@
 # --- USE: Age Checker ---
 user_age = 20 # Try changing this to 15, 18
-required_age = 18
+required_age = 21
 can_proceed = False
 
 print(f"User's age: {user_age}, Required age: {required_age}")
