@@ -20,17 +20,17 @@ Tasks:
 """
 
 # Task 3: Import pyjokes
-# import pyjokes
+import pyjokes
 
 # Task 4a: Get and print a neutral joke
-# neutral_joke = ...
-# print("Neutral Joke:")
-# print(neutral_joke)
+neutral_joke = pyjokes.get_joke('neutral_joke')
+print("Neutral Joke:")
+print(neutral_joke)
 
 # Task 4b: Get and print a Chuck Norris joke
-# chuck_joke = ...
-# print("\nChuck Norris Joke:")
-# print(chuck_joke)
+chuck_joke = joke = pyjokes.get_joke('chuck_joke')
+print("\nChuck Norris Joke:")
+print(chuck_joke)
 
 # Task 4c: Get and print a list of 3 jokes
 # list_of_jokes = ...
