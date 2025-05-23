@@ -32,7 +32,7 @@ class Cat(Animal):
         # Call the parent class's __init__ method
         super().__init__(name)
         self.fur_color = fur_color # Cat-specific attribute
-        print(f"It's a cat with {self.fur_color} fur!")
+        print(f"It's a cat called {self.name} with {self.fur_color} fur!")
 
     # Overriding the parent's speak method
     def speak(self):
@@ -41,6 +41,25 @@ class Cat(Animal):
     # Cat-specific method
     def purr(self):
         print(f"{self.name} purrs contentedly.")
+
+# Its __init__ should take name and bark_volume (e.g., "loud", "very loud"). Call super().__init__(name) and store bark_volume.
+# Override the speak method for LoudDog to print a bark that includes its bark_volume.
+# Add a new method fetch(self, item) that prints a message about fetching.
+# Create instances of LoudDog and test the methods.
+
+class LoudDog(Animal):
+    def __init__(self, name, bark_volume):
+        super().__init__(name)
+        self.bark_volume = bark_volume
+
+    def speak(self):
+        print(f"{self.name} makes a {self.bark_volume} sound.")
+
+    def eat(self):
+        print(f"{self.name} is eating.")
+
+    def fetch(self, item):
+        print(f"{self.name} is fetching {item}")
 
 # --- Let's USE the Animal and Cat classes ---
 print("--- Creating and Using Animal and Cat Objects ---")
@@ -55,3 +74,11 @@ my_cat.eat()      # Inherited from Animal
 my_cat.speak()    # Overridden in Cat
 my_cat.purr()     # Specific to Cat
 print(f"{my_cat.name} has {my_cat.fur_color} fur.")
+
+print("-" * 10)
+
+my_dog = LoudDog ('Barney', 'loud')
+my_dog.eat()
+my_dog.speak()
+my_dog.fetch('ball')
+print(f"{my_dog.name} barks too damn {my_dog.bark_volume}")

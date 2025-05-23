@@ -10,6 +10,7 @@
     *   Print the original and converted temperatures neatly.
     *   Example: "25.0°C is 77.0°F" or "68.0°F is 20.0°C".
 
+
 **Problem 2: Basic Library Book Checkout Message**
 *   **Task:** Create a function `generate_checkout_message(book_title, member_name, due_days=14)`.
     *   `book_title` (string): The title of the book.
