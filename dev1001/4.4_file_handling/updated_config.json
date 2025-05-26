@@ -2,5 +2,9 @@
     "username": "admin",
     "theme": "dark",
     "notifications_enabled": true,
-    "recent_files": ["doc1.txt", "report.pdf", "new_file.txt"]
+    "recent_files": [
+        "doc1.txt",
+        "report.pdf",
+        "new_file.txt"
+    ]
 }
